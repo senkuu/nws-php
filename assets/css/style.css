@@ -1,1 +1,63 @@
 @import url("./reset.css");
+
+* {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=105228), crosshair;
+}
+
+.header__nav {
+  background: hsl(310, 100%, 77%);
+}
+
+.header__nav__element__list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 3rem 0px;
+  margin-bottom: 1rem;
+}
+
+.header__nav__link {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.header__nav__link:hover {
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 1s ease-in-out infinite;
+  background-size: 400% 100%;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=105223), auto;
+}
+
+.footer {
+  background-color: hsl(310, 100%, 60%);
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0px;
+  width: 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}

@@ -2,7 +2,7 @@
 $date = date('Y');
 ?>
 
-<footer>
+<footer class="footer">
     <p>&copy; <?= $date ?> NWS Corporation</p>
     <address>
         72 rue de la république<br />
